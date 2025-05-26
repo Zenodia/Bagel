@@ -1,0 +1,1 @@
+sudo docker run --gpus all  -it --rm -v $(pwd):/workspace -v /mnt/ZenoHD/multimodal/ckpt/BAGEL-7B-MoT:/ckpt --shm-size=64g --ulimit memlock=-1 --ulimit stack=67108864 --net=host  --ulimit memlock=-1 --ulimit stack=67108864 --device=/dev/snd bagel:latest /bin/bash #nvcr.io/nvidia/pytorch:24.04-py3
